@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Exercise 2</title>
+	</head>
+	
+	<style>
+		h1
+		{
+			font-size: 25px;
+			font-family: veranda;
+			text-align: center;
+		}
+		
+		p
+		{
+			font-size: 20px;
+			font-family: helvetica;
+			text-align: center;
+		}
+	</style>
+	
+	<body>
+		<h1>1. If a word is odd in length, the middle character is returned.</h1>
+		<h1>2. If a word is even in length, the two middle characters are returned.</h1>
+		<h1>3. If the string is empty, then an empty string is returned.</h1>
+		
+		<p>
+			Middle character(s) of a word result:
+			<p id = "middleChar"></p>
+		</p>
+		
+		<script>
+			function getMiddleChar(string)
+			{
+				//create new variable
+				var middleLetters = '';
+
+				//find string length if even or odd
+				if (string.length % 2 === 0)
+				{
+				var even = string.length / 2;
+				return string.slice(even - 1, even + 1);
+				}
+
+				if (string.length % 2 !== 0)
+				{
+				var odd = string.charAt((string.length / 2))
+				return odd;
+				}
+			}
+
+			//getMiddleChar("dog");
+			//getMiddleChar("Fishing");
+			//getMiddleChar("have");
+			//getMiddleChar("Middle");
+			//getMiddleChar("C");
+			getMiddleChar("Davenport");
+			//getMiddleChar(" ");
+
+			document.getElementById("middleChar").innerHTML = getMiddleChar("Davenport");
+		</script>
+	</body>
+</html>
