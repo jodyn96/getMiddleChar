@@ -1,5 +1,4 @@
 //Exercise 2:
-
 //Given a word, return the middle character or characters of the word.
 //If the word is odd in length, return a string of the middle character.
 //If the word is even, return a string of the middle two characters.
