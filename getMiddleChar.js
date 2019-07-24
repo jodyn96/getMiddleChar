@@ -11,24 +11,23 @@
 //"Middle" should return "dd"
 //"C" should return "C"
 
-
 function getMiddleChar(string)
 {
-  //create new variable
-  var middleLetters = '';
+//create new variable
+var middleLetters = '';
 
-  //find string length if even or odd
-  if (string.length % 2 === 0)
-  {
-    var even = string.length / 2;
-    return string.slice(even - 1, even + 1);
-  }
+//find string length if even or odd
+if (string.length % 2 === 0)
+{
+var even = string.length / 2;
+return string.slice(even - 1, even + 1);
+}
 
-  if (string.length % 2 !== 0)
-  {
-    var odd = string.charAt((string.length / 2))
-    return odd;
-  }
+if (string.length % 2 !== 0)
+{
+var odd = string.charAt((string.length / 2))
+return odd;
+}
 }
 
 //getMiddleChar("dog");
